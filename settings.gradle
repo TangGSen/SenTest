@@ -1,0 +1,1 @@
+include ':demo', ':appdpi', ':haoliyou', ':downloadlib'

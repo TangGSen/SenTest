@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mozillaonline.providers.downloads.ui.DownloadItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:paddingRight="?android:attr/scrollbarSize" >
+
+    <!-- Clicks are handled directly by DownloadItem -->
+
+    <CheckBox
+        android:id="@+id/download_checkbox"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/down_checkbos_style" 
+        android:clickable="false"
+        android:paddingLeft="4dip"
+        android:button="@null"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:layout_marginLeft="8dp"
+        android:id="@+id/download_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/download_checkbox"
+        android:scaleType="fitCenter"
+        android:src="@drawable/start_download" />
+
+    <TextView
+        android:id="@+id/download_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/download_icon"
+        android:maxLines="1"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:layout_marginTop="3dp"
+        android:id="@+id/download_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/download_title"
+        android:layout_toRightOf="@id/download_icon"
+        android:layout_marginLeft="5dp"
+        android:progressDrawable="@drawable/down_progressbar"
+        android:max="100" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/download_progress"
+        android:maxLines="1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/download_progress"
+        android:layout_toRightOf="@id/download_icon"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="8dip"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/size_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/download_progress"
+        android:layout_toRightOf="@id/status_text"
+        android:layout_marginTop="5dp"
+        android:maxLines="1"
+        android:paddingLeft="15dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</com.mozillaonline.providers.downloads.ui.DownloadItem>
