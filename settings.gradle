@@ -1,1 +1,1 @@
-include ':demo', ':appdpi', ':haoliyou', ':downloadlib'
+include ':demo', ':appdpi', ':haoliyou', ':downloadlib', ':GuoYaoELearning', ':appRecycle', ':xrecyclerview'
